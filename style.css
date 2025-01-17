@@ -52,6 +52,7 @@ main section {
   max-width: 920px;
   margin: 0 auto;
   margin-top: 100px;
+  text-align: center;
 }
 
 /* Header Area Style */
@@ -114,22 +115,58 @@ main section {
   background: rgb(255, 238, 238);
 }
 .donate .highlight:hover {
-    background: rgb(255, 238, 238);
+  background: rgb(255, 238, 238);
 }
-.donate input{
-    border: 1px solid rgb(255, 238, 238);
-    outline: none;
-    padding: 10px 14px;
-    margin: 15px 0;
+.donate input {
+  border: 1px solid rgb(255, 238, 238);
+  outline: none;
+  padding: 10px 14px;
+  margin: 15px 0;
 }
 /* End Of Donate Section */
+
+/* Our Plan Section Style */
+.ecology-container {
+  display: flex;
+  gap: 18px;
+  margin-top: 40px;
+}
+.ecology-container .card{
+    border-radius: 4px;
+    padding: 30px 18px;
+    text-align: left;
+}
+.ecology-container img {
+  width: 40px;
+}
+.ecology-container .title {
+  color: rgb(18, 18, 18);
+  font-family: var(--secondaryFont);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 8px 0;
+}
+.ecology-container .description{
+    font-size: 0.75rem;
+}
+.ecology-container .food{
+    background: rgba(79, 157, 166, 0.1);
+}
+.ecology-container .shelter{
+    background: rgba(255, 89, 89, 0.1);
+}
+.ecology-container .education{
+    background: rgb(255, 244, 214);
+}
+/* Our Plan Section Style End */
 
 /* Responsive */
 @media screen and (max-width: 576px) {
   .hero-title {
     font-size: 2.5rem;
   }
-  .donate .card-container{
+  .donate .card-container,
+  .ecology-container {
     flex-direction: column;
   }
 }
