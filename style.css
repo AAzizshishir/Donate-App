@@ -4,8 +4,11 @@
 /* Secondary Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-/* Font For Footer */
+/* Font For Footer 1 */
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+/* Font For Footer 2 */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 /* Reset Default Style */
 * {
@@ -18,7 +21,8 @@
 :root {
   --mainFont: "Inter", serif;
   --secondaryFont: "Poppins", serif;
-  --fontForFooter: "Lobster", serif;
+  --primaryFooterFont: "Lobster", serif;
+  --secondaryFooterFont: "Manrope", serif;
 }
 body {
   max-width: 100vw;
@@ -205,17 +209,17 @@ footer {
   text-align: center;
   margin-top: 100px;
 }
-footer p {
+footer h3 {
   color: rgb(255, 89, 89);
-  font-family: var(--fontForFooter);
+  font-family: var(--primaryFooterFont);
   font-size: 28px;
   font-weight: 400;
   margin-bottom: 15px;
 }
-footer small {
+footer p {
   color: rgb(217, 219, 225);
-  font-family: var(--secondaryFont);
-  font-size: 8px;
+  font-family: var(--secondaryFooterFont);
+  font-size: 10px;
   font-weight: 400;
 }
 /* Responsive */
