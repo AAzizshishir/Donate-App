@@ -131,10 +131,10 @@ main section {
   gap: 18px;
   margin-top: 40px;
 }
-.ecology-container .card{
-    border-radius: 4px;
-    padding: 30px 18px;
-    text-align: left;
+.ecology-container .card {
+  border-radius: 4px;
+  padding: 30px 18px;
+  text-align: left;
 }
 .ecology-container img {
   width: 40px;
@@ -146,20 +146,36 @@ main section {
   font-weight: 600;
   margin: 8px 0;
 }
-.ecology-container .description{
-    font-size: 0.75rem;
+.ecology-container .description {
+  font-size: 0.75rem;
 }
-.ecology-container .food{
-    background: rgba(79, 157, 166, 0.1);
+.ecology-container .food {
+  background: rgba(79, 157, 166, 0.1);
 }
-.ecology-container .shelter{
-    background: rgba(255, 89, 89, 0.1);
+.ecology-container .shelter {
+  background: rgba(255, 89, 89, 0.1);
 }
-.ecology-container .education{
-    background: rgb(255, 244, 214);
+.ecology-container .education {
+  background: rgb(255, 244, 214);
 }
 /* Our Plan Section Style End */
 
+/* Request Section */
+.request {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 22px;
+}
+.request img {
+  max-width: 380px;
+  height: 380px;
+}
+.request .content {
+  text-align: left;
+  max-width: 400px;
+}
+/* Request Section Style End */
 /* Responsive */
 @media screen and (max-width: 576px) {
   .hero-title {
@@ -168,5 +184,8 @@ main section {
   .donate .card-container,
   .ecology-container {
     flex-direction: column;
+  }
+  .request {
+    grid-template-columns: 1fr;
   }
 }
